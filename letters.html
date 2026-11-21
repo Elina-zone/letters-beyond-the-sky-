@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Drifting Letters | Letters Beyond the Sky</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">✦ Letters Beyond the Sky</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="write.html">Write a Letter</a>
+            <a href="letters.html">Drifting Letters</a>
+            <a href="my-letters.html">My Letters</a>
+            <a href="starred.html">Starred Letters</a>
+            <a href="login.html" class="login">Sign In</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Drifting Letters Section -->
+    <main class="drifting-page">
+
+        <p class="small-heading">MESSAGES FROM OTHER WORLDS</p>
+
+        <h1>Drifting Letters</h1>
+
+        <p class="drifting-subtitle">
+            Somewhere beyond the sky, someone left these words.
+        </p>
+
+
+        <!-- Category Filters -->
+        <div class="letter-filters">
+
+            <button class="filter-btn active" data-category="All">
+                All Letters
+            </button>
+
+            <button class="filter-btn" data-category="Unspoken Words">
+                Unspoken Words
+            </button>
+
+            <button class="filter-btn" data-category="Heavy Hearts">
+                Heavy Hearts
+            </button>
+
+            <button class="filter-btn" data-category="Little Wishes">
+                Little Wishes
+            </button>
+
+            <button class="filter-btn" data-category="Thankful Souls">
+                Thankful Souls
+            </button>
+
+        </div>
+
+
+        <!-- Letters Grid -->
+        <section class="drifting-grid" id="driftingGrid">
+
+
+            <!-- Letter 1 -->
+            <article class="drifting-card" data-category="Unspoken Words">
+
+                <span class="letter-category">Unspoken Words</span>
+
+                <h2>Things I Never Said</h2>
+
+                <p class="letter-preview">
+                    Sometimes I wish I could go back and say the things
+                    I kept hidden. Maybe some words were meant to stay...
+                </p>
+
+                <div class="letter-meta">
+                    <span>Anonymous</span>
+                    <span>✦ Somewhere in the sky</span>
+                </div>
+
+                <div class="letter-actions">
+                    <button class="read-btn">Read Letter</button>
+                    <button class="star-btn">✧ <span>0</span></button>
+                </div>
+
+                <p class="full-letter" hidden>
+                    Sometimes I wish I could go back and say the things
+                    I kept hidden. I hope life gives us the courage to
+                    express what matters before the moment passes.
+                </p>
+
+            </article>
+
+
+            <!-- Letter 2 -->
+            <article class="drifting-card" data-category="Heavy Hearts">
+
+                <span class="letter-category">Heavy Hearts</span>
+
+                <h2>To My Future Self</h2>
+
+                <p class="letter-preview">
+                    I hope you are kinder to yourself now. I hope you
+                    have learned that taking your time is okay...
+                </p>
+
+                <div class="letter-meta">
+                    <span>Anonymous</span>
+                    <span>✦ Somewhere in the sky</span>
+                </div>
+
+                <div class="letter-actions">
+                    <button class="read-btn">Read Letter</button>
+                    <button class="star-btn">✧ <span>0</span></button>
+                </div>
+
+                <p class="full-letter" hidden>
+                    I hope you are kinder to yourself now. I hope you
+                    have learned that taking your time is okay.
+                    Keep growing at your own pace. You do not need
+                    to have everything figured out today.
+                </p>
+
+            </article>
+
+
+            <!-- Letter 3 -->
+            <article class="drifting-card" data-category="Little Wishes">
+
+                <span class="letter-category">Little Wishes</span>
+
+                <h2>A Quiet Wish</h2>
+
+                <p class="letter-preview">
+                    I wish for ordinary days filled with little moments
+                    that make life feel beautiful...
+                </p>
+
+                <div class="letter-meta">
+                    <span>Anonymous</span>
+                    <span>✦ Somewhere in the sky</span>
+                </div>
+
+                <div class="letter-actions">
+                    <button class="read-btn">Read Letter</button>
+                    <button class="star-btn">✧ <span>0</span></button>
+                </div>
+
+                <p class="full-letter" hidden>
+                    I wish for ordinary days filled with little moments
+                    that make life feel beautiful. A peaceful morning,
+                    kind words, a good book and reasons to be grateful.
+                </p>
+
+            </article>
+
+
+            <!-- Letter 4 -->
+            <article class="drifting-card" data-category="Thankful Souls">
+
+                <span class="letter-category">Thankful Souls</span>
+
+                <h2>For the Little Things</h2>
+
+                <p class="letter-preview">
+                    Today I just wanted to say thank you for all the
+                    small things we often forget to notice...
+                </p>
+
+                <div class="letter-meta">
+                    <span>Anonymous</span>
+                    <span>✦ Somewhere in the sky</span>
+                </div>
+
+                <div class="letter-actions">
+                    <button class="read-btn">Read Letter</button>
+                    <button class="star-btn">✧ <span>0</span></button>
+                </div>
+
+                <p class="full-letter" hidden>
+                    Today I just wanted to say thank you for all the
+                    small things we often forget to notice. A warm cup
+                    of tea, a familiar voice and a little kindness can
+                    make an ordinary day special.
+                </p>
+
+            </article>
+
+
+        </section>
+
+
+        <p class="drifting-footer">
+            ✦ Every letter carries a little piece of someone's world. ✦
+        </p>
+
+    </main>
+
+
+    <!-- Letter Reading Popup -->
+    <div class="letter-modal" id="letterModal">
+
+        <div class="letter-paper">
+
+            <button class="close-letter" id="closeLetter">
+                &times;
+            </button>
+
+            <span class="letter-decoration">
+                ✦ A LETTER FROM THE SKY ✦
+            </span>
+
+            <h2 id="modalLetterTitle">Untitled Letter</h2>
+
+            <p class="modal-category" id="modalLetterCategory"></p>
+
+            <div class="paper-divider">
+                ✧ ───────── ✧
+            </div>
+
+            <p class="modal-letter-message" id="modalLetterMessage"></p>
+
+            <div class="paper-footer">
+                Sent with a little piece of the heart ✦
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Letters | Letters Beyond the Sky</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">✦ Letters Beyond the Sky</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="write.html">Write a Letter</a>
+            <a href="letters.html">Drifting Letters</a>
+            <a href="discover.html">Discover</a>
+            <a href="my-letters.html">My Letters</a>
+            <a href="starred.html">Starred Letters</a>
+        </div>
+
+    </nav>
+
+
+    <!-- My Letters Section -->
+    <section class="my-letters-section">
+
+        <div class="my-letters-heading">
+
+            <p class="eyebrow">YOUR LITTLE COLLECTION</p>
+
+            <h1>My Letters</h1>
+
+            <p>
+                Every letter holds a little piece of a moment.
+            </p>
+
+            <div class="letter-stat">
+                <span id="totalLetters">0</span>
+                <p>Letters written</p>
+            </div>
+
+        </div>
+
+
+        <!-- Saved Letters Grid -->
+        <div id="myLettersGrid" class="my-letters-grid"></div>
+
+
+        <!-- Empty Letters Message -->
+        <div id="emptyLetters" class="empty-letters" hidden>
+
+            <h2>No letters yet ✦</h2>
+
+            <p>
+                Your little collection is waiting for its first letter.
+            </p>
+
+            <a href="write.html" class="btn">
+                Write Your First Letter
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>Some words are meant to travel. ✦</p>
+
+        <p>Letters Beyond the Sky</p>
+
+    </footer>
+
+
+    <!-- My Letter Reading Popup -->
+    <div class="letter-modal" id="myLetterModal">
+
+        <div class="letter-paper">
+
+            <button class="close-letter" id="closeMyLetter">
+                &times;
+            </button>
+
+            <span class="letter-decoration">
+                ✦ A LETTER FROM YOUR LITTLE WORLD ✦
+            </span>
+
+            <h2 id="myModalTitle">Untitled Letter</h2>
+
+            <p class="modal-category" id="myModalCategory"></p>
+
+            <div class="paper-divider">
+                ✧ ───────── ✧
+            </div>
+
+            <p class="modal-letter-message" id="myModalMessage"></p>
+
+            <div class="paper-footer">
+                A little memory of your words ✦
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

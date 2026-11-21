@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Write a Letter | Letters Beyond the Sky</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">✦ Letters Beyond the Sky</div>
+<div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="write.html">Write a Letter</a>
+    <a href="letters.html">Drifting Letters</a>
+    <a href="my-letters.html">My Letters</a>
+    <a href="login.html" class="login">Sign In</a>
+</div>
+</nav>
+
+    <main class="write-page">
+
+        <p class="small-heading">A MESSAGE FROM YOUR HEART</p>
+
+        <h1>Write a Letter</h1>
+
+        <p class="write-subtitle">
+            Let your words travel somewhere beyond the sky.
+        </p>
+
+        <form id="letterForm" class="letter-paper">
+
+            <label for="letterTitle">Give your letter a title (optional)</label>
+            <input
+                type="text"
+                id="letterTitle"
+                maxlength="70"
+                placeholder="A little piece of my heart..."
+            >
+
+            <label for="letterCategory">Choose a collection</label>
+            <select id="letterCategory" required>
+                <option value="">Select a category</option>
+                <option>Unspoken Words</option>
+                <option>Heartfelt Moments</option>
+                <option>Heavy Hearts</option>
+                <option>Little Wishes</option>
+                <option>Thankful Souls</option>
+                <option>New Beginnings</option>
+                <option>Dear Memories</option>
+                <option>Letting Go</option>
+            </select>
+
+            <label for="letterMessage">Your letter</label>
+            <textarea
+                id="letterMessage"
+                rows="9"
+                maxlength="2000"
+                placeholder="Dear someone,&#10;&#10;There are words I have been carrying..."
+                required
+            ></textarea>
+
+            <div class="letter-count">
+                <span id="characterCount">0</span>/2000 characters
+            </div>
+
+            <p class="privacy-note">
+                ✦ Your letter will be displayed anonymously.
+                Please don't include personal details such as your phone
+                number, address or email.
+            </p>
+
+            <button type="submit" class="send-letter">
+                Send Into the Sky ✧
+            </button>
+
+        </form>
+
+        <p class="write-footer">
+            Some words are meant to travel.
+        </p>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
